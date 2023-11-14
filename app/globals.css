@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heroButton {
+    @apply rounded-full border border-transparent px-6 py-2 capitalize tracking-widest text-gray-300 transition-all hoverable:hover:border-red-400;
+  }
+
+  .section-header {
+    @apply text-sm uppercase tracking-[20px] text-gray-500 sm:top-32 sm:text-2xl pb-10;
+  }
+
+  .section {
+    @apply flex h-screen snap-center flex-col items-center justify-center pt-[90px] pb-[100px];
+  }
+  .contact-input {
+    @apply rounded-sm border-b border-[#242424] bg-slate-400/10 px-3 py-3 text-gray-500 outline-none hover:border-red-400/50 focus:border-red-400/50 focus:text-red-400/50 md:px-6 md:py-4;
+  }
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #f87171;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.show-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.show-scrollbar::-webkit-scrollbar {
+  display: block; /* Safari and Chrome */
+}

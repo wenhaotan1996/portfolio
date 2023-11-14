@@ -1,6 +1,11 @@
 'use server';
 import { initializeApp } from 'firebase/app';
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import {
+  addDoc,
+  collection,
+  getFirestore,
+  serverTimestamp,
+} from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
@@ -27,6 +32,7 @@ async function saveMessage({ name, email, message, subject }: Message) {
       email,
       message,
       subject,
+      timestamp: serverTimestamp(),
     });
     console.log('Message saved with ID: ', docRef.id);
   } catch (e) {

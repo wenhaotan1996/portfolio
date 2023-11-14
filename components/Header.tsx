@@ -1,17 +1,20 @@
-"use client";
-import { SocialIcon } from "react-social-icons";
-import { AnimatePresence, motion } from "framer-motion";
-import { FaCheck } from "react-icons/fa";
-import { useState } from "react";
+'use client';
+import { SocialIcon } from 'react-social-icons';
+import { AnimatePresence, motion } from 'framer-motion';
+import { FaCheck } from 'react-icons/fa';
+import { useState } from 'react';
 
 type Props = {};
 
 export default function Header({}: Props) {
   const links = [
-    { url: "https://github.com/wenhaotan1996", target: "_blank" },
-    { url: "https://www.linkedin.com/in/wenhaotan/", target: "_blank" },
     {
-      network: "sharethis",
+      url: 'https://github.com/wenhaotan1996/portfolio',
+      target: '_blank',
+    },
+    { url: 'https://www.linkedin.com/in/wenhaotan/', target: '_blank' },
+    {
+      network: 'sharethis',
       onClick: async () => {
         await navigator.clipboard.writeText(window.location.href);
         setShowCopyToast(true);
@@ -25,7 +28,7 @@ export default function Header({}: Props) {
   const [showCopyToast, setShowCopyToast] = useState(false);
 
   function onContactMeClicked() {
-    document.getElementById("contact-me")?.scrollIntoView();
+    document.getElementById('contact-me')?.scrollIntoView();
   }
 
   return (
@@ -44,12 +47,11 @@ export default function Header({}: Props) {
             scale: 1,
           }}
           transition={{
-            type: "spring",
+            type: 'spring',
             damping: 10,
             stiffness: 80,
             duration: 1,
-          }}
-        >
+          }}>
           {links.map((link, i) => (
             <SocialIcon
               key={i}
@@ -74,13 +76,12 @@ export default function Header({}: Props) {
             scale: 1,
           }}
           transition={{
-            type: "spring",
+            type: 'spring',
             damping: 10,
             stiffness: 80,
             duration: 1,
           }}
-          onClick={onContactMeClicked}
-        >
+          onClick={onContactMeClicked}>
           <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
           <p className="hidden text-sm uppercase text-gray-400 md:block">
             Get in touch
@@ -95,9 +96,8 @@ export default function Header({}: Props) {
               exit={{ opacity: 0 }}
               transition={{
                 duration: 1,
-                ease: "easeInOut",
-              }}
-            >
+                ease: 'easeInOut',
+              }}>
               <FaCheck />
               <p className="ml-4">Link was copied to clipboard</p>
             </motion.div>

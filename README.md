@@ -55,14 +55,23 @@
 <br>
 <div align="center">
   <img  src="https://github.com/wenhaotan1996/portfolio/blob/main/public/icon-weather-app.png" title="Daily Weather" alt="Daily Weather" width="300" />
-  <p>Daily Weather&nbsp;&nbsp;&nbsp;<a href="https://www.wenhaotan.cloud/weather"><img src="https://img.shields.io/badge/Take_a_peek-33b054" width:"40" /></a></p>
+  <p>
+    Daily Weather&nbsp;&nbsp;&nbsp;
+    <a href="https://www.wenhaotan.cloud/weather"><img src="https://img.shields.io/badge/Demo-33b054" width:"40" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/wenhaotan1996/daily-weather"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
+  </p>
   <p>A mobile friendly responsive weather app that provides you the basic infomation of current weather and 7-day forecast. The app is built using Next.js 13 and also powered by Tailwind CSS, Tremor React, Appolo GraphQL, and Open Mateo public weather API. It takes advantage of Next.js' great support of SSR to cache the page to further reduce page load time for users.</p>
 </div>
 <br><br><br>
 <div align="center">
   <img  src="https://github.com/wenhaotan1996/portfolio/blob/main/public/icon-news-app.png" title="Everyday News" alt="Everyday News" width="300" />
-  <p>Everyday News&nbsp;&nbsp;&nbsp;<a href="https://www.wenhaotan.cloud/news"><img src="https://img.shields.io/badge/Take_a_peek-d47a2c" width:"40" /></a></p>
+  <p>
+    Everyday News&nbsp;&nbsp;&nbsp;
+    <a href="https://www.wenhaotan.cloud/news"><img src="https://img.shields.io/badge/Demo-33b054c" width:"40" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/wenhaotan1996/everyday-news"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
+  </p>
   <p>A clean, responsive, and dark mode supported news app that gives you your daily dose of intenet. The app features Next.js 13, tailwind CSS, and Appolo GraphQL. It acquires news data through MediaStack API and delivers news articles from most news sources. It utilizes Next.js server side rendering to reduce the total call to the news api and to reduce load time for users.</p>
 </div>
+
 
 

@@ -10,22 +10,22 @@ const skills = [
   {
     name: 'CSS3',
     logo: '/css3-logo.svg',
-    imageClass: 'scale-[0.7] translate-y-1',
+    imageClass: 'py-2',
   },
   {
     name: 'AWS',
     logo: '/aws-logo.svg',
-    imageClass: 'scale-[1.2] translate-y-1',
+    imageClass: 'scale-[1.2]',
   },
   {
     name: 'Firebase',
     logo: '/firebase-logo.png',
-    imageClass: 'scale-[0.8]',
+    imageClass: 'scale-[0.9]',
   },
   {
     name: 'Git',
     logo: '/git-logo.svg',
-    imageClass: 'scale-[0.8] translate-y-0.5',
+    imageClass: 'py-2',
   },
   {
     name: 'GraphQL',
@@ -34,7 +34,7 @@ const skills = [
   {
     name: 'Html',
     logo: '/html-logo.svg',
-    imageClass: 'scale-[0.7] translate-y-1',
+    imageClass: 'py-2',
   },
   {
     name: 'Java',
@@ -51,29 +51,31 @@ const skills = [
   {
     name: 'NextJs',
     logo: '/nextjs-logo.svg',
+    imageClass: 'px-2',
   },
   {
     name: 'Python',
     logo: '/python-logo.png',
+    imageClass: 'py-2',
   },
   {
     name: 'Tailwind CSS',
     logo: '/tailwind-logo.svg',
+    imageClass: 'scale-[0.8]',
   },
   {
     name: 'TypeScript',
     logo: '/typescript-logo.png',
-    imageClass: 'scale-[0.7]',
+    imageClass: 'py-2',
   },
   {
     name: 'VScode',
     logo: '/vscode-logo.webp',
-    imageClass: 'scale-[0.7]',
   },
   {
     name: 'Vue',
     logo: '/vue-logo.png',
-    imageClass: 'scale-[0.75] translate-y-1.5',
+    imageClass: 'py-2',
   },
 ];
 const totalRows = Math.ceil(skills.length / 4);
@@ -82,8 +84,8 @@ export default function Skills({}: Props) {
   return (
     <section className="section" id="skills">
       <h3 className="section-header">Skills</h3>
-      <div className="flex-1 flex items-center">
-        <div className="grid grid-cols-4 gap-3">
+      <div className="flex-1 w-full flex items-center justify-center">
+        <div className="grid grid-cols-4 grid-flow-row gap-5 lg:gap-6  w-full max-w-[900px] px-6 lg:pb-4 h-full max-h-[600px]">
           {skills.map(({ name, logo, ...otherProps }, i) => (
             <Skill
               key={name}

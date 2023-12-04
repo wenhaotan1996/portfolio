@@ -1,3 +1,6 @@
+'use client';
+import { motion } from 'framer-motion';
+
 type Props = {
   title: string;
   image: string;
@@ -17,7 +20,12 @@ export default function ExperienceCard({
 }: Props) {
   return (
     <div className="w-full h-full flex-shrink-0 flex items-center justify-center snap-center pb-8 px-1">
-      <article className="hoverable:opacity-40 flex h-[420px] w-[500px] max-w-full flex-shrink-0 flex-col items-center space-y-2 overflow-auto rounded-lg bg-[#292929] py-6 transition-opacity duration-300 hover:opacity-100 sm:space-y-7 md:h-[550px] md:w-[600px] xl:w-[900px] max-h-full">
+      <motion.article
+        className="flex h-[420px] w-[500px] max-w-full flex-shrink-0 flex-col items-center space-y-2 overflow-auto rounded-lg bg-[#292929]/50 py-6 sm:space-y-7 md:h-[550px] md:w-[600px] xl:w-[900px] max-h-full"
+        initial={{ opacity: 0.2 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}>
         <img className={imageClass} src={image} alt="" />
 
         <div className="px-10">
@@ -32,7 +40,7 @@ export default function ExperienceCard({
             ))}
           </ul>
         </div>
-      </article>
+      </motion.article>
     </div>
   );
 }

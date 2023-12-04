@@ -231,7 +231,7 @@ export default function ParticlesBackground() {
 
   return (
     <div
-      className={`absolute -z-10 h-full w-full overflow-hidden bg-[rgb(36,36,36)]`}>
+      className={`absolute -z-10 h-full w-full overflow-hidden bg-slate-900`}>
       <Particles id="tsparticles" init={particlesInit} options={config} />
     </div>
   );

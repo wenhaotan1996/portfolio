@@ -18,7 +18,7 @@ export default function BacktoTop({ containerId }: Props) {
     };
   }, [updateScrollPos]);
   function updateScrollPos() {
-    setShow((document.getElementById(containerId)?.scrollTop ?? 0) >= 0);
+    setShow((document.getElementById(containerId)?.scrollTop ?? 0) > 0);
   }
   return (
     <AnimatePresence>

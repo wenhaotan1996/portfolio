@@ -29,7 +29,7 @@
 
 ---
 
-### :hammer_and_wrench: Languages and Tools :
+### 🛠️ Languages and Tools :
 <br>
 <div align="left">
   <img src="https://github.com/wenhaotan1996/portfolio/blob/main/public/react-logo.svg" title="React" alt="React" width="35" height="35" />&nbsp;&nbsp;
@@ -50,7 +50,7 @@
 
 ---
 
-### :computer: Projects :
+### 💻 Projects :
 
 <br>
 <div align="center">

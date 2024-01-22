@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import muniliveLogo from '@/public/munilive-app.png';
 
 type Props = {};
 
@@ -33,6 +34,13 @@ const projects: Project[] = [
       "A responsive and fully functional messaging app that does translation automatically for you. User can type in messages in any language and the app will translate them into all the supported languages. The app features Next.js 14, tailwind CSS, Firebase, shadcn, Google translation API, and Next Auth. It leverages Next Auth's session management to allow access to authentication state in server to fully take advantages of server side rendering offered by Next.js.",
     image: '/icon-talkfree-app.png',
     link: '/talkfree',
+  },
+  {
+    name: 'Bus Live',
+    description:
+      'A simple and resposive app that provides next arrival predictions and live vehicle locations of SF Muni and a few other transport agency. The app features Next.js 14, shadcn UI, tailwind CSS, and Google Map API.',
+    image: muniliveLogo.src,
+    link: '/munilive',
   },
 ];
 

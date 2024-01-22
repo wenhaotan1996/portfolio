@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
+const TRANSLATE_OFFSET = 200;
+
 type Props = {
   animateFromLeft?: boolean;
   logo: string;
@@ -17,14 +19,13 @@ export default function Skill({
 }: Props) {
   return (
     <motion.div
-      className="relative "
-      initial={{
-        y: animateFromLeft ? -100 : 100,
-        opacity: 0,
+      className="relative"
+      whileInView={{
+        opacity: [0, 0, 1],
+        x: [0, (animateFromLeft ? -1 : 1) * TRANSLATE_OFFSET, 0],
       }}
-      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 1, delay: 0.3, ease: 'easeInOut' }}>
+      transition={{ duration: 1, ease: 'easeInOut', times: [0, 0.1, 1] }}>
       <Image
         src={logo}
         alt={`${name} logo`}

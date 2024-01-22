@@ -25,6 +25,39 @@ type Message = {
   message: string;
   subject: string;
 };
+
+async function sendEmail({ name, email, message, subject }: Message) {
+  fetch('https://api.sendgrid.com/v3/mail/send', {
+    method: 'POST',
+    cache: 'no-cache',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.SENDGRID_APIKEY}`,
+    },
+    body: JSON.stringify({
+      personalizations: [
+        {
+          to: [
+            {
+              email: process.env.CONTACT_RECEIPT_EMAIL,
+            },
+          ],
+          dynamic_template_data: {
+            name,
+            email,
+            message,
+            subject,
+          },
+        },
+      ],
+      template_id: process.env.SENDGRID_TEMPLATE_ID,
+      from: {
+        email: process.env.CONTACT_RECEIPT_EMAIL,
+      },
+    }),
+  });
+}
+
 async function saveMessage({ name, email, message, subject }: Message) {
   try {
     const docRef = await addDoc(collection(db, 'message'), {
@@ -34,7 +67,7 @@ async function saveMessage({ name, email, message, subject }: Message) {
       subject,
       timestamp: serverTimestamp(),
     });
-    console.log('Message saved with ID: ', docRef.id);
+    await sendEmail({ name, email, message, subject });
   } catch (e) {
     console.error('Error saving message: ', e);
   }

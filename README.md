@@ -29,7 +29,7 @@
 
 ---
 
-### :hammer_and_wrench: Languages and Tools :
+### 🛠️ Languages and Tools :
 <br>
 <div align="left">
   <img src="https://github.com/wenhaotan1996/portfolio/blob/main/public/react-logo.svg" title="React" alt="React" width="35" height="35" />&nbsp;&nbsp;
@@ -50,15 +50,15 @@
 
 ---
 
-### :computer: Projects :
+### 💻 Projects :
 
 <br>
 <div align="center">
   <img  src="https://github.com/wenhaotan1996/portfolio/blob/main/public/icon-weather-app.png" title="Daily Weather" alt="Daily Weather" width="300" />
   <p>
     Daily Weather&nbsp;&nbsp;&nbsp;
-    <a href="https://www.wenhaotan.cloud/weather"><img src="https://img.shields.io/badge/Demo-33b054" width:"40" /></a>&nbsp;&nbsp;
-    <a href="https://github.com/wenhaotan1996/daily-weather"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
+    <a href="https://www.wenhaotan.cloud/weather" target="_blank"><img src="https://img.shields.io/badge/Demo-33b054" width:"40" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/wenhaotan1996/daily-weather" target="_blank"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
   </p>
   <p>A mobile friendly responsive weather app that provides you the basic infomation of current weather and 7-day forecast. The app is built using Next.js 13 and also powered by Tailwind CSS, Tremor React, Appolo GraphQL, and Open Mateo public weather API. It takes advantage of Next.js' great support of SSR to cache the page to further reduce page load time for users.</p>
 </div>
@@ -67,10 +67,20 @@
   <img  src="https://github.com/wenhaotan1996/portfolio/blob/main/public/icon-news-app.png" title="Everyday News" alt="Everyday News" width="300" />
   <p>
     Everyday News&nbsp;&nbsp;&nbsp;
-    <a href="https://www.wenhaotan.cloud/news"><img src="https://img.shields.io/badge/Demo-33b054c" width:"40" /></a>&nbsp;&nbsp;
-    <a href="https://github.com/wenhaotan1996/everyday-news"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
+    <a href="https://www.wenhaotan.cloud/news" target="_blank"><img src="https://img.shields.io/badge/Demo-33b054c" width:"40" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/wenhaotan1996/everyday-news" target="_blank"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
   </p>
   <p>A clean, responsive, and dark mode supported news app that gives you your daily dose of intenet. The app features Next.js 13, tailwind CSS, and Appolo GraphQL. It acquires news data through MediaStack API and delivers news articles from most news sources. It utilizes Next.js server side rendering to reduce the total call to the news api and to reduce load time for users.</p>
+</div>
+<br><br><br>
+<div align="center">
+  <img  src="https://github.com/wenhaotan1996/portfolio/blob/main/public/icon-talkfree-app.png" title="Talk Free" alt="Talk Free" width="300" />
+  <p>
+    Talk Free&nbsp;&nbsp;&nbsp;
+    <a href="https://www.wenhaotan.cloud/talkfree" target="_blank"><img src="https://img.shields.io/badge/Demo-33b054c" width:"40" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/wenhaotan1996/talkfree" target="_blank"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
+  </p>
+  <p>A responsive and fully functional messaging app that does translation automatically for you. User can type in messages in any language and the app will translate them into all the supported languages. The app features Next.js 14, tailwind CSS, Firebase, shadcn, Google translation API, and Next Auth. It leverages Next Auth's session management to allow access to authentication state in server to fully take advantages of server side rendering offered by Next.js.</p>
 </div>
 
 

@@ -82,6 +82,16 @@
   </p>
   <p>A responsive and fully functional messaging app that does translation automatically for you. User can type in messages in any language and the app will translate them into all the supported languages. The app features Next.js 14, tailwind CSS, Firebase, shadcn, Google translation API, and Next Auth. It leverages Next Auth's session management to allow access to authentication state in server to fully take advantages of server side rendering offered by Next.js.</p>
 </div>
+<br><br><br>
+<div align="center">
+  <img  src="https://github.com/wenhaotan1996/portfolio/blob/main/public/munilive-app.png" title="Bus Live" alt="Bus Live" width="300" />
+  <p>
+    Bus Live&nbsp;&nbsp;&nbsp;
+    <a href="https://www.wenhaotan.cloud/munilive" target="_blank"><img src="https://img.shields.io/badge/Demo-33b054c" width:"40" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/wenhaotan1996/buslive" target="_blank"><img src="https://img.shields.io/badge/Repo-d47a2c?logo=github" width:"40" /></a>
+  </p>
+  <p>A simple and resposive app that provides next arrival predictions and live vehicle locations of SF Muni and a few other transport agency. The app features Next.js 14, shadcn UI, tailwind CSS, and Google Map API.</p>
+</div>
 
 
 
